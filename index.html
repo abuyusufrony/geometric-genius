@@ -26,20 +26,23 @@
                     <div class="card-body ">
                         <h2 class="card-title ">Trinagle!</h2>
                         <p class="text-2xl text-center">Area(A)=0.5 Xb XH</p>
-                        <div class=""><input class="text-2xl w-24 rounded-sm mr-2" type="text" placeholder="B">
+                        <div class=""><input id="base" class="text-2xl w-24 rounded-sm mr-2" type="text"
+                                placeholder="B">
                             <span>cm</span>
-                            <input class="text-2xl w-24 rounded-sm" type="text" placeholder="H">
+                            <input id="height" class="text-2xl w-24 rounded-sm" type="text" placeholder="H">
                             <span>cm</span>
+                            <div>
+                                <p id="">Area= <span id="areap"></span> <span>cm <sup>2</sup> </span></p>
+                            </div>
                         </div>
                         <div class="card-actions ">
-                            <button onclick="calculateTrainagle()" class="btn btn-primary w-full ">Calculate</button>
+                            <button onclick="calculateTrainagle()" class="btn btn-primary w-full ">Count me </button>
                         </div>
                     </div>
                 </div>
                 <div class="card bg-base-100 w-full shadow-xl pr-6">
                     <figure>
-                        <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-                            alt="Shoes" />
+                        <img src="images/rectangle.png" alt="Shoes" />
                     </figure>
                     <div class="card-body">
                         <h2 class="card-title">Rectangle!</h2>
@@ -52,7 +55,7 @@
                         </div>
 
                         <div class="card-actions ">
-                            <button class="btn btn-primary w-full">Calculate</button>
+                            <button class="btn btn-primary w-full">Rectangle Value</button>
                         </div>
                     </div>
                 </div>
@@ -83,7 +86,7 @@
                     <div class="card-body">
                         <h2 class="card-title">Rhombus!</h2>
                         <p class="text-2xl">Area(A)=0.5 Xb XH</p>
-                        <div class=""><input class="text-2xl w-24 rounded-sm" type="text" placeholder="B">
+                        <div class=""><input id="" class="text-2xl w-24 rounded-sm" type="text" placeholder="B">
                             <span>cm</span>
                             <input class="text-2xl w-24 rounded-sm" type="text" placeholder="H">
                             <span>cm</span>
@@ -102,6 +105,7 @@
         </div>
     </main>
     <script src="scripts/triangle.js"></script>
+
 
 </body>
 
