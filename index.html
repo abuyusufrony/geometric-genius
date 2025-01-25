@@ -48,14 +48,17 @@
                         <h2 class="card-title">Rectangle!</h2>
                         <p>
                         <p class="text-2xl">Area (A) = w x L</p>
-                        <div class=""><input class="text-2xl w-24 rounded-sm" type="text" placeholder="w">
+                        <div class=""><input id="wreact" class="text-2xl w-24 rounded-sm" type="text" placeholder="w">
                             <span>cm</span>
-                            <input class="text-2xl w-24 rounded-sm" type="text" placeholder="l">
+                            <input id="lreact" class="text-2xl w-24 rounded-sm" type="text" placeholder="l">
                             <span>cm</span>
+                            <div class="">
+                                <p>Reactangle: <span id="rshow"></span> <span>cm <sup>2</sup></span></p>
+                            </div>
                         </div>
 
                         <div class="card-actions ">
-                            <button class="btn btn-primary w-full">Rectangle Value</button>
+                            <button onclick="valueReactangle()" class="btn btn-primary w-full">Rectangle Value</button>
                         </div>
                     </div>
                 </div>
@@ -105,6 +108,7 @@
         </div>
     </main>
     <script src="scripts/triangle.js"></script>
+    <script src="scripts/reactangle.js"></script>
 
 
 </body>
