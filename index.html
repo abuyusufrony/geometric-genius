@@ -71,13 +71,16 @@
                         <h2 class="card-title">Parallelogram!</h2>
                         <p class="text-2xl">Area (A) = b x h</p>
                         <p>b=10cm, h=12cm</p>
-                        <div class=""><input class="text-2xl w-24 rounded-sm" type="text" placeholder="B">
+                        <div class=""><input id="bpara" class="text-2xl w-24 rounded-sm" type="text" placeholder="B">
                             <span>cm</span>
-                            <input class="text-2xl w-24 rounded-sm" type="text" placeholder="H">
+                            <input id="hpara" class="text-2xl w-24 rounded-sm" type="text" placeholder="H">
                             <span>cm</span>
+                            <div>
+                                <p>Area: <span></span> <span>cm <sup>2</sup></span></p>
+                            </div>
                         </div>
                         <div class="card-actions justify-end">
-                            <button class="btn btn-primary w-full">Calculate</button>
+                            <button onclick=" paralogram()" class="btn btn-primary w-full">Calculate</button>
                         </div>
                     </div>
                 </div>
@@ -89,13 +92,13 @@
                     <div class="card-body">
                         <h2 class="card-title">Rhombus!</h2>
                         <p class="text-2xl">Area(A)=0.5 Xb XH</p>
-                        <div class=""><input id="" class="text-2xl w-24 rounded-sm" type="text" placeholder="B">
+                        <div class=""><input class="text-2xl w-24 rounded-sm" type="text" id="rombus" placeholder="Br">
                             <span>cm</span>
-                            <input class="text-2xl w-24 rounded-sm" type="text" placeholder="H">
+                            <input class="text-2xl w-24 rounded-sm" type="text" id="romboH" placeholder="H">
                             <span>cm</span>
                         </div>
                         <div class="card-actions ">
-                            <button class="btn w-full">Calculate</button>
+                            <button onclick="getRombosValue()" class="btn w-full">Calculate Rombo</button>
                         </div>
                     </div>
                 </div>
@@ -109,6 +112,8 @@
     </main>
     <script src="scripts/triangle.js"></script>
     <script src="scripts/reactangle.js"></script>
+    <script src="scripts/para.js"></script>
+    <script src="scripts/rom.js"></script>
 
 
 </body>
